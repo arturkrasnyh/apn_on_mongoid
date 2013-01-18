@@ -5,7 +5,7 @@ module APN
     include Mongoid::Timestamps
 
     field :name
-    field :identifier
+    field :app_identifier
     field :certificate
 
     index :identifier, :unique => true, :background => true
